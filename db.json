@@ -5,11 +5,11 @@
             "password": "password123",
             "accounts":[
                 {
-                    "accountNumber": 101,
+                    "account_number": 101,
                     "balance": 125000.55
                 },
                 {
-                    "accountNumber": 121,
+                    "account_number": 121,
                     "balance": 15147.00
                 }
             ]
