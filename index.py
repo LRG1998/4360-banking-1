@@ -21,10 +21,10 @@ def main():
         message.print("Welcome to the bank of Py!")
         message.print("please login to continue.")
 
-        userName = input("Username: ")
+        user_name = input("Username: ")
         password = input("password")
 
-        user = auth.login(userName, password)
+        user = auth.login(user_name, password)
         if not user:
             login_attempts += 1
             failed_attempt = True
