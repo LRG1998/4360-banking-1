@@ -17,7 +17,7 @@ class Auth:
                 if user['password'] == password:
                     accounts = {}
                     for account in user['accounts']:
-                        accounts[account['accountNumber']] = Account(account['balance'])
+                        accounts[account['account_number']] = Account(account['balance'])
                     return User(user['name'], accounts)
                 else:
                     print("name or password not found")
