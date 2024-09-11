@@ -34,9 +34,9 @@ class User:
 
     def withdraw(self, args):
         try:
-            accountNumber = int(args[0])
+            account_number = int(args[0])
             amount = int(args[1])
-            account = self.accounts[accountNumber]
+            account = self.accounts[account_number]
 
             if not account:
                 raise InvalidAccountNumberException
