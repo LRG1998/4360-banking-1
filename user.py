@@ -51,11 +51,11 @@ class User:
 
     def transfer(self, args):
         from_account_number = int(args[0])
-        toAccountNumber = int(args[1])
+        to_account_number = int(args[1])
         amount = int(args[2])
 
         account1 = self.accounts[from_account_number]
-        account2 = self.accounts[toAccountNumber]
+        account2 = self.accounts[to_account_number]
 
         if not account1 or not account2:
             raise InvalidAccountNumberException
