@@ -13,10 +13,10 @@ def main():
     
     #authenticate user
     login_attempts = 0
-    failedAttempt = False
+    failed_attempt = False
     while login_attempts < 3:
         os.system('cls')
-        if failedAttempt:
+        if failed_attempt:
             message.print("please try again")
         message.print("Welcome to the bank of Py!")
         message.print("please login to continue.")
@@ -27,7 +27,7 @@ def main():
         user = auth.login(userName, password)
         if not user:
             login_attempts += 1
-            failedAttempt = True
+            failed_attempt = True
         else:
             break
 
