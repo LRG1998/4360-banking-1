@@ -1,9 +1,8 @@
 import json
 from user import User
 from account import Account
-from message import Message
 
-message = Message()
+
 
 class Auth:
     def __init__(self):
@@ -21,8 +20,8 @@ class Auth:
                         accounts[account['accountNumber']] = Account(account['balance'])
                     return User(user['name'], accounts)
                 else:
-                    message.print("name or password not found")
+                    print("name or password not found")
             else:
-                message.print("name or password not found")
+                print("name or password not found")
             
         return None

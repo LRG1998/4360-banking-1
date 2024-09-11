@@ -1,5 +1,5 @@
 import os
-from message import Message
+
 from interface import UserInterface
 from user import User
 from account import Account
@@ -7,7 +7,7 @@ from auth import Auth
 
 
 def main():
-    message = Message()
+
     ui = UserInterface()
     auth = Auth()
     
@@ -17,9 +17,9 @@ def main():
     while login_attempts < 3:
         os.system('cls')
         if failed_attempt:
-            message.print("please try again")
-        message.print("Welcome to the bank of Py!")
-        message.print("please login to continue.")
+            print("please try again")
+        print("Welcome to the bank of Py!")
+        print("please login to continue.")
 
         user_name = input("Username: ")
         password = input("password")
@@ -39,7 +39,7 @@ def main():
     #Main Loop
     while True:
         os.system('cls')
-        message.print("What can we do for you today?")
+        print("What can we do for you today?")
         user.show_accounts()
         ui.show_commands()
         user_inputs = input().lower().split(" ")
