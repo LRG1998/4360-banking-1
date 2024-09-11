@@ -18,9 +18,9 @@ class User:
     
     def deposit(self, args):
         try:
-            accountNumber = int(args[0])
+            account_number = int(args[0])
             amount = int(args[1])
-            account = self.accounts.get(accountNumber)
+            account = self.accounts.get(account_number)
             
             if not account:
                 raise InvalidAccountNumberException
